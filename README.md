@@ -1,4 +1,4 @@
-# 💻 Personal Portfolio 
+# 💻 Personal Portfolio
 
 A modern, responsive personal portfolio website built using **React.js** to showcase my skills, projects, certification. The portfolio includes multiple pages with smooth navigation and a functional contact form that sends messages directly to email.
 
@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built using **React.js** to show
 
 https://simon-says-game-7pno.onrender.com
 
-## ✨ Features
+## Features
 
 - Responsive and mobile-friendly design
 - Multi-page routing using React Router
@@ -15,7 +15,7 @@ https://simon-says-game-7pno.onrender.com
 - Clean UI with reusable components
 - Fast and optimized performance
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - React.js
 - EmailJS
@@ -23,7 +23,7 @@ https://simon-says-game-7pno.onrender.com
 - HTML5
 - CSS3
 
-## 🔐 EmailJS Setup
+## EmailJS Setup
 
 1. Create an account on EmailJS
 2. Create an Email Service and Email Template
