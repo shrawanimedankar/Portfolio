@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Skills.module.css";
 
 const SkillCard = ({ name, icon }) => {

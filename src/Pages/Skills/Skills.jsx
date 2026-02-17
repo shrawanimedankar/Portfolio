@@ -37,6 +37,7 @@ const skillData = [
     skills: [
       { name: "Node.js", icon: nodeJsIcon },
       { name: "Express.js", icon: expressJsIcon },
+      { name: "RESTful API", icon: restApiIcon },
     ],
   },
   {
