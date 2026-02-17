@@ -43,7 +43,7 @@ const skillData = [
     category: "Database",
     skills: [
       { name: "MongoDB", icon: mongoDbIcon },
-      { name: "SQL", icon: sqlIcon },
+      { name: "MySQL", icon: sqlIcon },
     ],
   },
   {
