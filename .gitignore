@@ -4,9 +4,8 @@
 .env.development.local
 .env.production.local
 
-src/assets/
-public/
-src/Pages/Resume/*.pdf
+
+
 
 # Logs
 logs
