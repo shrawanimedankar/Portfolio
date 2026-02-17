@@ -1,0 +1,64 @@
+.resumeSection {
+  padding: 1rem;
+  text-align: center;
+}
+
+.downloadBtn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 22px;
+  background-color: #4e005e;
+  color: white;
+  text-decoration: none;
+  border: 4px solid #d70dff;
+  font-weight: 900;
+  width: fit-content;
+  transition: 0.2s;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.downloadBtn:hover {
+  background-color: #e254ff;
+  color: rgb(0, 0, 0);
+  border: 4px solid #6f0085;
+}
+
+.resumeCard {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 0.8rem groove #ce006e;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .resumeCard {
+    max-width: 95%;
+    border-width: 0.6rem;
+  }
+
+  .downloadBtn {
+    font-size: 1.1rem;
+    padding: 9px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resumeSection {
+    padding: 0.5rem;
+  }
+
+  .downloadBtn {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .resumeCard {
+    border-width: 0.4rem;
+    border-radius: 8px;
+  }
+}

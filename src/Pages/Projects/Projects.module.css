@@ -1,0 +1,196 @@
+.projects {
+  padding: 1rem 4rem;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.filters button {
+  padding: 6px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.filters .active {
+  background: #960037;
+  border: 1px solid white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.card {
+  background: #3700175f;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+  padding: 0 0 10px 0;
+   border: 1px solid #3700175f;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 10px 20px; 
+  text-align: left;
+  color: #ffffff;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid #000000;
+  border-bottom: 4px solid #8b0035;
+}
+
+.title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Github and Live */
+.linksInline {
+  display: flex;
+  gap: 8px;
+}
+
+.linksInline a {
+  font-size: 20px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 2px solid #ffffff;
+  background-color: #000749;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.linksInline a:hover {
+  background: #000b72;
+}
+
+/* Category */
+.type {
+  font-size: 17px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.description {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: start;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* Tech Stack */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech span {
+  background: rgb(53, 53, 53);
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 60px;
+  font-size: 20px;
+  border: 1px solid rgb(53, 53, 53);
+}
+
+.tech span:hover {
+  border: 1px solid rgb(201, 201, 201);
+}
+
+
+
+
+
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .filters button {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .linksInline a {
+    font-size: 15px;
+    padding: 3px 6px;
+  }
+
+  .type {
+    font-size: 16px;
+  }
+
+  .content h6 {
+    font-size: 13px;
+  }
+
+  .tech span {
+    font-size: 14px;
+    padding: 3px 8px;
+  }
+}

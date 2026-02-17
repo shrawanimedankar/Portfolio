@@ -1,0 +1,385 @@
+.aboutSection {
+  padding: 1rem 4rem;
+}
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Layout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+/* Left */
+.left {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.imageBox img {
+  width: 300px;
+  border-radius: 16px;
+}
+/* Stats stacked vertically */
+.stats {
+  display: grid;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+}
+.card p {
+  font-size: 1em;
+  color: #111111;
+}
+.card h3,
+.card p {
+  margin: 0;
+  line-height: 1.2;
+}
+.card {
+  text-align: center;
+  background: #ff70a9;
+  color: #000000;
+  height: fit-content;
+  margin: 0%;
+  padding: 3px 9px;
+  border-radius: 12px;
+  border: 9px groove #ca0051;
+  animation: floatY 4s ease-in-out infinite;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Vertical float animation (original) */
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Horizontal float to right */
+@keyframes floatRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Horizontal float to left */
+@keyframes floatLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Assign horizontal animations to alternating cards */
+.card:nth-child(odd) {
+  animation: floatRight 3s ease-in-out infinite;
+}
+
+.card:nth-child(even) {
+  animation: floatLeft 3s ease-in-out infinite;
+}
+
+/* Right */
+.right h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2;
+  color: #3632ff;
+}
+.right p {
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: start;
+}
+/* Checkpoints */
+.points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.1rem;
+  margin-top: 1rem;
+}
+
+/* Tech Stack */
+.techStack {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.techStack h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(134, 134, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.tags span {
+  background: #000453; /* Default background */
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden; /* Needed for the fill animation */
+  cursor: pointer;
+  font-weight: 900;
+
+  transition: color 0.3s ease;
+}
+
+/* Create the fill effect using a pseudo-element */
+.tags span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; /* Start with 0% width */
+  height: 100%;
+  background: linear-gradient(90deg, #000453, #000ac02c); /* Gradient fill */
+  border-radius: 20px;
+  border: 2px solid #000453;
+  z-index: 0;
+  transition: width 0.8s ease;
+}
+
+/* Hover effect */
+.tags span:hover::before {
+  width: 100%; /* Fill the background */
+  border: 2px solid white;
+}
+
+.tags span span,
+.tags span {
+  position: relative;
+  z-index: 2;
+  color: white; /* Change text color if needed */
+  transition: color 0.5s ease;
+}
+
+.tags span:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 769px) {
+  .aboutSection {
+    padding: 1rem 0.5rem;
+  }
+
+  .aboutSection p {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 0 15px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  /* Left */
+  .left {
+    gap: 1rem;
+    align-items: center; /* center items */
+    text-align: center;
+    margin: 0 auto; /* center block */
+  }
+  .imageBox img {
+    width: 150px;
+    margin: 0 auto;
+  }
+  /* Stats stacked vertically */
+  .stats {
+    gap: 0.3rem;
+  }
+
+  .card h3 {
+    font-size: 0.8em;
+  }
+  .card p {
+    font-size: 0.6em;
+  }
+  .card h3,
+  .card p {
+    margin: 0;
+    line-height: 1;
+  }
+  .card {
+    padding: 3px 7px;
+    border-radius: 10px;
+    border: 6px groove #ca0051;
+  }
+
+  /* Right */
+  .right h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 2;
+    color: #3632ff;
+    text-align: center;
+  }
+  .right p {
+    margin-bottom: 0.6rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .points {
+    gap: 0.1rem;
+    margin-top: 0.8rem;
+  }
+
+  .points span {
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+    text-align: start;
+  }
+
+  .techStack {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .techStack h4 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .tags span {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1289px) {
+  .aboutSection {
+    padding: 1rem 1rem;
+  }
+
+  .aboutSection p {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 0 1rem;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  /* Left */
+  .left {
+    gap: 2rem;
+    align-items: center; /* center items */
+    text-align: center;
+    margin: 0 auto; /* center block */
+  }
+  .imageBox img {
+    width: 240px;
+    margin: 0 auto;
+  }
+  /* Stats stacked vertically */
+  .stats {
+    gap: 0.3rem;
+  }
+
+  .card h3 {
+    font-size: 0.9em;
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .card h3,
+  .card p {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .card {
+    padding: 3px 10px;
+    border: 8px groove #ca0051;
+  }
+
+  /* Right */
+  .right h3 {
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .right p {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .points {
+    gap: 0.2rem;
+    margin-top: 0.8rem;
+  }
+
+  .points span {
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    text-align: start;
+  }
+
+  .techStack {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .techStack h4 {
+    font-size: 2.1rem;
+    font-weight: 800;
+  }
+
+  .tags span {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

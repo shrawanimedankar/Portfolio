@@ -1,0 +1,95 @@
+.footer {
+  background: #13070c;
+  color: #fff;
+  padding: 40px 7px 20px 7px;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.brand h2 {
+  font-size: 1.7rem;
+}
+
+.brand p {
+  color: #ebebeb;
+  font-size: 1rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: filter 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffffff;
+  filter: drop-shadow(0 0 1.5px #ffffff);
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+.social a {
+  transition: 0.3s;
+  color: white;
+  border: 1px solid rgb(64, 64, 64);
+  border-radius: 50%;
+  padding: 8px;
+  transition:
+    transform 0.1s ease,
+    color 0.3s ease;
+}
+
+.social a:hover {
+  color: #ffffff;
+  box-shadow: 1px 1px 12px #ff0000;
+  border: 1px solid rgb(255, 255, 255);
+  transform: translateY(-4px) scale(1.1);
+}
+
+.copy {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1rem;
+  color: #bebebe;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}
