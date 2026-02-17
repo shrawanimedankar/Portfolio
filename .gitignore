@@ -4,9 +4,6 @@
 .env.development.local
 .env.production.local
 
-
-
-
 # Logs
 logs
 *.log

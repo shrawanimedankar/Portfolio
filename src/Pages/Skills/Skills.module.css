@@ -15,7 +15,7 @@
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
@@ -44,7 +44,7 @@
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .skillCard {
@@ -70,8 +70,6 @@
   height: 30px;
 }
 
-
-
 /* @media (max-width: 768px) {
   .skillsSection {
     padding: 1rem 2rem;
@@ -86,26 +84,22 @@
   }
 } */
 
-
 @media (max-width: 1024px) {
-
   .skillsSection {
     padding: 1rem 2rem;
   }
 
   .categories {
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
   .skillGrid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 900px) {
-
   .skillsSection {
     padding: 1rem 0.7rem;
   }
@@ -115,8 +109,8 @@
   }
 
   .category {
-  padding: 0.1rem;
-}
+    padding: 0.1rem;
+  }
   .category h3 {
     font-size: 1.3rem;
     text-align: center;
@@ -125,7 +119,6 @@
   .skillGrid {
     /* grid-template-columns: 1fr;   */
     grid-template-columns: repeat(1.1, 1fr);
-
   }
 
   .skillCard {
@@ -137,5 +130,4 @@
     width: 24px;
     height: 24px;
   }
-
 }

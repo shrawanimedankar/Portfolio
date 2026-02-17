@@ -1,7 +1,7 @@
 import reactIcon from "./React.png";
 import htmlIcon from "./Html.png";
 import cssIcon from "./Css.png";
-import jsIcon from "./Javascript.png";
+import javascript from "./Javascript.png";
 import bootstrapIcon from "./Bootstrap.png";
 import tailwindCssIcon from "./Tailwind-Css.png";
 import materialUiIcon from "./Material-UI.png";
@@ -18,7 +18,7 @@ export {
   reactIcon,
   htmlIcon,
   cssIcon,
-  jsIcon,
+  javascript,
   bootstrapIcon,
   tailwindCssIcon,
   materialUiIcon,
