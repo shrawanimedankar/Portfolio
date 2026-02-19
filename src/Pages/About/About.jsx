@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import profilePic from "../../assets/profile.jpg";
+import Icons from "../../utils/icons";
 
 const About = () => {
   return (
@@ -50,12 +51,12 @@ const About = () => {
         {/* Right Side */}
         <div className={styles.right}>
           <h3>Full Stack Developer | Pune, India.</h3>
-          <p >
+          <p>
             Hi everyone! I'm Shrawani Medankar from Pune. I hold a BCA degree
-            (GPA 8.5) from MES Garware College of Commerce. During my studies, I
-            discovered a passion for building web applications and diving deep
-            into the MERN stack and modern web technologies. Learning and
-            creating is what drives me every day.
+            (GPA 8.5) from MES Garware College of Commerce. During my academic
+            journey, I cultivated a deep interest in building web applications
+            and mastering the MERN stack and modern web technologies. Continuous
+            learning and creating innovative solutions motivate me every day.
           </p>
           <p>
             I love turning ideas into interactive web experiences, building
@@ -72,11 +73,26 @@ const About = () => {
           </p>
           {/* Qualities */}
           <div className={styles.points}>
-            <span>🗹 Continuous Learner</span>
-            <span>🗹 Creative Thinker</span>
-            <span>🗹 Always Evolving</span>
-            <span>🗹 Self-Motivated</span>
-            <span>🗹 Adaptable & Flexible</span>
+            <span>
+              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
+              Continuous Learner
+            </span>
+            <span>
+              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
+              Creative Thinker
+            </span>
+            <span>
+              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
+              Always Evolving
+            </span>
+            <span>
+              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
+              Self-Motivated
+            </span>
+            <span>
+              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
+              Adaptable & Flexible
+            </span>
           </div>
         </div>
       </div>

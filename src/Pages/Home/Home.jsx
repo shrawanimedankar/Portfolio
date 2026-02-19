@@ -3,6 +3,7 @@ import profilePic from "../../assets/profile.jpg";
 import Icons from "../../utils/icons";
 import resumePDF from "../Resume/Shrawani_Medankar_Resume.pdf";
 import { Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -31,9 +32,9 @@ const Home = () => {
               <Download style={{ verticalAlign: "middle" }} /> Download Resume
             </a>
 
-            <a href="/contact" className={`${styles.btn} ${styles.outline}`}>
+            <Link to="/contact" className={`${styles.btn} ${styles.outline}`}>
               <Icons.RiMessage2Fill size={25} /> Reach Out Anytime
-            </a>
+            </Link>
           </div>
         </div>
 

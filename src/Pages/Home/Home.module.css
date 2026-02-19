@@ -34,7 +34,7 @@
 /* titleRotate */
 .titleRotate {
   position: relative;
-  height: 60px;
+  height: 57px;
   overflow: hidden;
   font-weight: 900;
   font-family: "Lexend Deca", sans-serif;
@@ -283,7 +283,7 @@
     bottom: 30px;
   }
   .titleRotate {
-    height: 65px;
+    height: 45x;
     font-weight: 700;
   }
   .titleRotate span {

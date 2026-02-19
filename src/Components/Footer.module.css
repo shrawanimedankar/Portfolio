@@ -16,12 +16,16 @@
 }
 
 .brand h2 {
-  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  font-family: "Acme", sans-serif;
+  letter-spacing: 3px;
+  transition: 0.2s;
+  font-size: 2rem;
 }
 
 .brand p {
-  color: #ebebeb;
-  font-size: 1rem;
+  color: #cfcfcf;
+  font-size: 1.4rem !important ;
 }
 
 .links {
@@ -91,5 +95,11 @@
 
   .social {
     justify-content: center;
+  }
+  .brand h2 {
+    font-size: 1.6rem;
+  }
+  .brand p {
+     font-size: 1rem !important ;
   }
 }

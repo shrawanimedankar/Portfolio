@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import Icons from "../utils/icons";
-
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,24 +15,22 @@ export default function Footer() {
         {/* Middle */}
         <ul className={styles.links}>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/skills">Skills</a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
-          </li>
-          {/* <li><a href="/certifications">Certifications</a></li> */}
-          {/* <li><a href="/experience">Experience</a></li> */}
-          <li>
-            <a href="/resume">Resume</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -41,13 +39,28 @@ export default function Footer() {
           <a href="mailto:shrawanimedankar@email.com">
             <Icons.RiMailLine />
           </a>
-          <a href="https://www.linkedin.com/in/shrawanimedankar">
+
+          <a
+            href="https://www.linkedin.com/in/shrawanimedankar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icons.RiLinkedinFill />
           </a>
-          <a href="https://github.com/shrawanimedankar">
+
+          <a
+            href="https://github.com/shrawanimedankar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icons.RiGithubFill />
           </a>
-          <a href="https://www.instagram.com/_.shrawi">
+
+          <a
+            href="https://www.instagram.com/_.shrawi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icons.RiInstagramLine />
           </a>
         </div>

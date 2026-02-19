@@ -22,10 +22,10 @@ h2 {
 }
 
 p {
-  color: #858585;
+  color: #787878;
   margin-bottom: 1rem;
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   text-align: center;
 }
 
@@ -44,4 +44,13 @@ p {
 .search:focus {
   border-color: #ff4d8d;
   box-shadow: 0 0 6px rgba(255, 77, 141, 0.6);
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem !important;
+  }
+  h2 {
+    padding-bottom: 0.4rem;
+  }
 }
