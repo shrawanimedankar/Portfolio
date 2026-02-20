@@ -225,6 +225,34 @@
   animation: pulse 3s infinite;
 }
 
+.projectBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  margin-bottom: 3rem;
+}
+
+.projectBtn {
+  background-color: rgb(255, 103, 169);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  border-radius: 45px;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: 900;
+  align-items: center;
+  gap: 10px;
+}
+
+.projectBtn:hover {
+  background-color: rgb(223, 0, 97);
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 rgb(255, 255, 255);
@@ -288,5 +316,12 @@
   }
   .titleRotate span {
     font-size: 1.1rem;
+  }
+
+  .projectBtn {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    gap: 5px;
+    margin-top: 2rem;
   }
 }

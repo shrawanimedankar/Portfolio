@@ -12,10 +12,13 @@ import Contact from "./Pages/Contact/Contact";
 // import Experience from "./Pages/Experience/Experience";
 // import Certification from "./Pages/Certification/Certification";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
+
 
 function App() {
   return (
     <Router>
+       <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

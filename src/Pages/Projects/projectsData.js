@@ -173,7 +173,7 @@ const projectsData = [
     description:
       "It allows users to add, delete, and mark todos as done. Designed with a clean UI using CSS Flexbox and supports mobile responsiveness.",
     category: "frontend",
-    image: "/toDoList.png",
+    image: "/todoList.png",
     tech: ["React.js", "JavaScript", "CSS"],
     live: "",
     github: "",
@@ -186,7 +186,15 @@ const projectsData = [
       "Responsive design for desktop and mobile",
       "Unique IDs for todos using uuid",
     ],
-    futureImprovements: ["", "", "", ""],
+    futureImprovements: [
+      "Add Local Storage support to persist tasks after page refresh",
+      "Implement Edit Todo functionality",
+      "Add Due Date & Time picker for tasks",
+      "Create Filter options (All, Completed, Pending)",
+      "Add Search functionality",
+      "Implement Dark / Light mode toggle",
+      "Add User Authentication (Login/Signup)",
+    ],
   },
 ];
 
