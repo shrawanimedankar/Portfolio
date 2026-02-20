@@ -73,26 +73,11 @@ const About = () => {
           </p>
           {/* Qualities */}
           <div className={styles.points}>
-            <span>
-              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
-              Continuous Learner
-            </span>
-            <span>
-              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
-              Creative Thinker
-            </span>
-            <span>
-              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
-              Always Evolving
-            </span>
-            <span>
-              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
-              Self-Motivated
-            </span>
-            <span>
-              <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} />
-              Adaptable & Flexible
-            </span>
+            <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Continuous Learner</span>
+            <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Creative Thinker</span>
+            <span> <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Always Evolving</span>
+            <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Self-Motivated</span>
+            <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Adaptable & Flexible</span>
           </div>
         </div>
       </div>
