@@ -15,6 +15,7 @@ import {
   mongoDbIcon,
   sqlIcon,
   gitIcon,
+  githubIcon,
   dockerIcon,
   kubernetesIcon,
 } from "./Assets";
@@ -48,11 +49,13 @@ const skillData = [
     ],
   },
   {
-    category: "DevOps & Tools",
+    // category: "DevOps & Tools",
+    category: "Tools",
     skills: [
       { name: "Git", icon: gitIcon },
-      { name: "Docker", icon: dockerIcon },
-      { name: "Kubernetes", icon: kubernetesIcon },
+      { name: "Github", icon: githubIcon },
+      // { name: "Docker", icon: dockerIcon },
+      // { name: "Kubernetes", icon: kubernetesIcon },
     ],
   },
 ];

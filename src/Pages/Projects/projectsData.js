@@ -58,19 +58,33 @@ const projectsData = [
       "Animations for rain, snow, and thunderstorms.",
     ],
   },
+
   {
     id: 3,
-    title: "Portfolio",
-    description: "",
+    title: "Portfolio Website",
+    description:
+      "A modern, responsive React portfolio showcasing my skills, projects, and a functional contact form with smooth navigation.",
     category: "frontend",
     image: "/portfolio.png",
-    tech: ["React.js", "CSS", "", ""],
-    live: "https://weatherapp-vw8v.onrender.com",
-    github: "https://github.com/shrawanimedankar/WeatherApp",
+    tech: ["React.js", "CSS3", "JavaScript (ES6+)", "HTML5"],
+    live: "https://shrawanimedankar.onrender.com",
+    github: "https://github.com/shrawanimedankar/Portfolio",
     date: "November 2025",
-    keyFeatures: ["", "", ""],
-    futureImprovements: ["", ""],
+    keyFeatures: [
+      "Responsive and mobile-friendly design",
+      "Multi-page routing using React Router",
+      "Dynamic projects section with detailed project pages",
+      "Contact form integrated with EmailJS",
+      "Clean UI with reusable components",
+      "Fast and optimized performance",
+    ],
+    futureImprovements: [
+      "Add dark/light theme toggle",
+      "Add admin panel to manage projects dynamically",
+      "Add testimonials section",
+    ],
   },
+
   {
     id: 4,
     title: "Random Joke Generator",

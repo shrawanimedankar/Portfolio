@@ -11,6 +11,7 @@ import restApiIcon from "./Rest-Api.png";
 import mongoDbIcon from "./MongoDB.png";
 import sqlIcon from "./Sql.png";
 import gitIcon from "./Git.png";
+import githubIcon from "./Github.png";
 import dockerIcon from "./Docker.png";
 import kubernetesIcon from "./Kubernetes.png";
 
@@ -28,6 +29,7 @@ export {
   mongoDbIcon,
   sqlIcon,
   gitIcon,
+  githubIcon,
   dockerIcon,
   kubernetesIcon,
 };
