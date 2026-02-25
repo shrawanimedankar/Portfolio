@@ -53,7 +53,7 @@ const skillData = [
     category: "Tools",
     skills: [
       { name: "Git", icon: gitIcon },
-      { name: "Github", icon: githubIcon },
+      { name: "GitHub", icon: githubIcon },
       // { name: "Docker", icon: dockerIcon },
       // { name: "Kubernetes", icon: kubernetesIcon },
     ],
