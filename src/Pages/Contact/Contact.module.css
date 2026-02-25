@@ -205,8 +205,8 @@
 
 
 .infoSection p {
-  color: #ff5353;
-  font-size: 0.9rem;
+  color: #ff4949;
+  font-size: 0.8rem !important;
   margin: 3px 0 20px 0;
 }
 
