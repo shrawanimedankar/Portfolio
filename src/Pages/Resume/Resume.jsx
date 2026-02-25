@@ -2,11 +2,14 @@ import styles from "./Resume.module.css";
 import resumePDF from "./Shrawani_Medankar_Resume.pdf";
 import { Download } from "lucide-react";
 
-
 const Resume = () => {
   return (
     <section className={styles.resumeSection} id="resume">
-      <a href={resumePDF} download className={styles.downloadBtn}>
+      <a
+        href={resumePDF}
+        download="Shrawani_Medankar_Resume.pdf"
+        className={styles.downloadBtn}
+      >
         <Download style={{ verticalAlign: "middle" }} /> Download Resume
       </a>
 
@@ -15,7 +18,7 @@ const Resume = () => {
           src={resumePDF + "#toolbar=0"} // hides toolbar
           title="Resume"
           width="100%"
-          style={{ height: "80vh", minHeight: "500px"  }}
+          style={{ height: "80vh", minHeight: "500px" }}
         ></iframe>
       </div>
     </section>
