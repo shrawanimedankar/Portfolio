@@ -9,7 +9,9 @@
 /* Layout */
 .content {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+   gap: 2rem;
+   grid-template-columns: 0.8fr 1.2fr;
+   align-items: start;
 }
 
 /* Left */
@@ -17,10 +19,12 @@
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  width: fit-content;
+  justify-content: center;
 }
 .imageBox img {
   width: 300px;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 /* Stats stacked vertically */
 .stats {
@@ -30,17 +34,17 @@
 }
 
 .card h3 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 900;
 }
 .card p {
-  font-size: 1em;
+  font-size: 0.9em !important;
   color: #111111;
 }
 .card h3,
 .card p {
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.;
 }
 .card {
   text-align: center;
@@ -107,7 +111,7 @@
 
 /* Right */
 .right h3 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 900;
@@ -117,8 +121,9 @@
 .right p {
   margin-bottom: 0.6rem;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1rem !important;
   text-align: start;
+  font-weight: 300;
 }
 /* Checkpoints */
 .points {
@@ -200,25 +205,23 @@
 
 @media (max-width: 769px) {
   .aboutSection {
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
   }
-
   .aboutSection p {
     font-size: 0.8rem;
   }
-
   .content {
     padding: 0 15px;
     justify-items: center;
     grid-template-columns: 1fr;
+    align-items: start;
   }
-
   /* Left */
   .left {
     gap: 1rem;
-    align-items: center; /* center items */
+    align-items: center; 
     text-align: center;
-    margin: 0 auto; /* center block */
+    margin: 0 auto; 
   }
   .imageBox img {
     width: 150px;
@@ -228,12 +231,11 @@
   .stats {
     gap: 0.3rem;
   }
-
   .card h3 {
-    font-size: 0.8em;
+    font-size: 0.8em !important;
   }
   .card p {
-    font-size: 0.6em;
+    font-size: 0.7em !important;
   }
   .card h3,
   .card p {
@@ -245,7 +247,6 @@
     border-radius: 10px;
     border: 6px groove #ca0051;
   }
-
   /* Right */
   .right h3 {
     margin-top: 1rem;
@@ -259,7 +260,7 @@
   .right p {
     margin-bottom: 0.6rem;
     color: #ffffff;
-    font-size: 0.8rem;
+    font-size: 0.75rem !important;
     font-weight: 400;
     text-align: center;
   }
@@ -267,24 +268,20 @@
     gap: 0.1rem;
     margin-top: 0.8rem;
   }
-
   .points span {
     font-size: 0.9rem;
     margin: 0 0.3rem;
     text-align: start;
   }
-
   .techStack {
     margin-top: 2rem;
     text-align: center;
     margin-bottom: 2rem;
   }
-
   .techStack h4 {
     font-size: 2rem;
     font-weight: 800;
   }
-
   .tags span {
     padding: 6px 10px;
     border-radius: 20px;
@@ -295,19 +292,17 @@
 
 @media (min-width: 769px) and (max-width: 1289px) {
   .aboutSection {
-    padding: 1rem 1rem;
+    padding: 0.4rem 1rem;
   }
-
   .aboutSection p {
     font-size: 1rem;
   }
-
   .content {
     padding: 0 1rem;
     justify-items: center;
     grid-template-columns: 1fr;
+    align-items: start;
   }
-
   /* Left */
   .left {
     gap: 2rem;
@@ -323,12 +318,11 @@
   .stats {
     gap: 0.3rem;
   }
-
   .card h3 {
-    font-size: 0.9em;
+    font-size: 0.9em !important;
   }
   .card p {
-    font-size: 0.8em;
+    font-size: 0.8em !important;
   }
   .card h3,
   .card p {
@@ -339,7 +333,6 @@
     padding: 3px 10px;
     border: 8px groove #ca0051;
   }
-
   /* Right */
   .right h3 {
     margin-top: 1.3rem;
@@ -358,24 +351,20 @@
     gap: 0.2rem;
     margin-top: 0.8rem;
   }
-
   .points span {
     font-size: 1rem;
     margin: 0 0.3rem;
     text-align: start;
   }
-
   .techStack {
     margin-top: 2rem;
     text-align: center;
     margin-bottom: 2rem;
   }
-
   .techStack h4 {
     font-size: 2.1rem;
     font-weight: 800;
   }
-
   .tags span {
     padding: 6px 10px;
     border-radius: 20px;

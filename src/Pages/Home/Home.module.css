@@ -18,12 +18,12 @@
 }
 .homeContent .greet {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem !important;
   font-weight: 900;
 }
 .home .name {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem !important; 
   font-family: "Young Serif", serif;
   font-weight: 500;
   letter-spacing: 2px;
@@ -45,10 +45,11 @@
   width: 100%;
   color: rgb(75, 234, 255);
   left: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   top: 0;
   opacity: 0;
   animation: slideText 8s infinite;
+  letter-spacing: 1px !important;
 }
 
 /* delays */
@@ -88,7 +89,7 @@
 }
 
 .homeContent .para {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1rem;
   font-weight: 500;
   color: #b3b3b3;
@@ -237,7 +238,7 @@
   background-color: rgb(255, 103, 169);
   border: 2px solid rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-radius: 45px;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
@@ -279,11 +280,11 @@
   }
 
   .homeContent .greet {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
   }
 
   .home .name {
-    font-size: 2rem;
+    font-size: 1.5rem !important; 
     letter-spacing: 1px;
   }
 
@@ -293,6 +294,7 @@
 
   .homeContent .para {
     font-size: 0.95rem;
+    margin-top: 0;
   }
 
   .btn {
@@ -315,7 +317,7 @@
     font-weight: 700;
   }
   .titleRotate span {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .projectBtn {

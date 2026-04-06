@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
-import profilePic from "../../assets/profile.jpg";
+// import profilePic from "../../assets/profile.jpg";
+import profilePic2 from "../../assets/profile2.jpeg";
 import Icons from "../../utils/icons";
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
         {/* Left Side */}
         <div className={styles.left}>
           <div className={styles.imageBox}>
-            <img src={profilePic} alt="profile" />
+            <img src={profilePic2} alt="profile" />
           </div>
 
           <div className={styles.stats}>
@@ -50,7 +51,7 @@ const About = () => {
 
         {/* Right Side */}
         <div className={styles.right}>
-          <h3>Full Stack Developer | Pune, India.</h3>
+          <h3>Full Stack Developer | Pune, Maharashtra, India.</h3>
           <p>
             Hi everyone! I'm Shrawani Medankar from Pune. I hold a BCA degree
             (GPA 8.5) from MES Garware College of Commerce. During my academic
@@ -75,6 +76,7 @@ const About = () => {
           <div className={styles.points}>
             <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Continuous Learner</span>
             <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Creative Thinker</span>
+            <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Problem Solver</span>
             <span> <Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Always Evolving</span>
             <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Self-Motivated</span>
             <span><Icons.RiCheckboxFill style={{ verticalAlign: "middle" }} /> Adaptable & Flexible</span>
