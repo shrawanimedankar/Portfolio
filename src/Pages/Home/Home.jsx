@@ -30,10 +30,10 @@ const Home = () => {
             </p>
 
             <div className={styles.homeButtons}>
-              <a href={resumePDF} download className={styles.btn}>
+              <a href={resumePDF} download="Shrawani_Medankar_Resume.pdf" className={styles.btn}>
                 <Download style={{ verticalAlign: "middle" }} /> Download Resume
               </a>
-
+            
               <Link to="/contact" className={`${styles.btn} ${styles.outline}`}>
                 <Icons.RiMessage2Fill size={25} /> Reach Out Anytime
               </Link>
