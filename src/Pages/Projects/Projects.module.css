@@ -109,8 +109,8 @@
 }
 
 .description {
-  font-size: 20px;
-  color: #ffffff;
+  font-size: 19px !important;
+  color: #d7d7d7;
   text-align: start;
   font-weight: 200;
   margin-top: 10px;
@@ -128,7 +128,7 @@
   padding: 5px 10px;
   color: rgb(255, 255, 255);
   border-radius: 60px;
-  font-size: 20px;
+  font-size: 17px !important;
   border: 1px solid rgb(53, 53, 53);
 }
 

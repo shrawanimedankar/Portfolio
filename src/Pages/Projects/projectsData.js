@@ -159,10 +159,11 @@ const projectsData = [
   {
     id: 7,
     title: "Quick Notes",
-    description: "sequences",
+    description:
+      "A Notes Application built using React.js and Tailwind CSS. Users can add, edit, delete, search, and store notes using LocalStorage.",
     category: "frontend",
     image: "/quickNotes.png",
-    tech: ["React", "Tailwind CSS", "JavaScript"],
+    tech: ["React.js", "Tailwind CSS", "JavaScript"],
     live: "https://quick-notes-q1fj.onrender.com",
     github: "https://github.com/shrawanimedankar/quick-notes",
     date: "October 2025",
@@ -189,8 +190,8 @@ const projectsData = [
     category: "frontend",
     image: "/todoList.png",
     tech: ["React.js", "JavaScript", "CSS"],
-    live: "",
-    github: "",
+    live: "https://github.com/shrawanimedankar/To-Do-List",
+    github: "https://github.com/shrawanimedankar/To-Do-List",
     date: "October 2025",
     keyFeatures: [
       "Add new todos",
