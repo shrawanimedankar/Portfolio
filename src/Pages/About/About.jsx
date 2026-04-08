@@ -1,5 +1,4 @@
 import styles from "./About.module.css";
-// import profilePic from "../../assets/profile.jpg";
 import profilePic2 from "../../assets/profile2.jpeg";
 import Icons from "../../utils/icons";
 

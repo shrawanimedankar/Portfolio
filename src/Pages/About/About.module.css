@@ -39,7 +39,7 @@
 }
 .card p {
   font-size: 0.9em !important;
-  color: #111111;
+  color: #ca0051;
 }
 .card h3,
 .card p {
@@ -48,8 +48,7 @@
 }
 .card {
   text-align: center;
-  background: #ff70a9;
-  color: #000000;
+  color: #ca0051;
   height: fit-content;
   margin: 0%;
   padding: 3px 9px;
@@ -57,7 +56,7 @@
   border: 9px groove #ca0051;
   animation: floatY 4s ease-in-out infinite;
   transition:
-    transform 0.4s ease,
+    transform 0.5s ease,
     box-shadow 0.4s ease;
 }
 
