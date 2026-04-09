@@ -39,7 +39,7 @@
 }
 .card p {
   font-size: 0.9em !important;
-  color: #ca0051;
+  color: #ff64a2;
 }
 .card h3,
 .card p {
@@ -48,7 +48,7 @@
 }
 .card {
   text-align: center;
-  color: #ca0051;
+  color: #ff64a2;
   height: fit-content;
   margin: 0%;
   padding: 3px 9px;

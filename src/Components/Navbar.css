@@ -1,11 +1,10 @@
 .navbar {
   width: 100vw;
-  /* width: auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 60px 5px 30px;
-  background: #920049;
+  padding: 4px 60px 0 30px;
+  background: #ff399c;
   position: sticky;
   top: 0;
   left: 0;
@@ -13,10 +12,11 @@
   transition:
     background 0.3s ease,
     backdrop-filter 0.3s ease;
+    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.882);
 }
 
 .navbar.scrolled {
-  background: #ff46a3e2;
+  background: #ff399ce1;
   backdrop-filter: blur(6px);
 }
 
@@ -29,8 +29,8 @@
 }
 
 .logo-img {
-  width: 55px;
-  height: 55px;
+  width: 53px;
+  height: 53px;
   object-fit: contain;
   border-radius: 50%;
   border: 0.1px solid #fff;

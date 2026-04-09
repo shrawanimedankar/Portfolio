@@ -15,7 +15,7 @@ const projectsData = [
       "Express.js",
       "Passport.js",
     ],
-    live: " https://roamella.onrender.com/listings",
+    live: "https://roamella.onrender.com/listings",
     github: "#",
     date: "Novemeber 2025",
     keyFeatures: [
@@ -190,7 +190,7 @@ const projectsData = [
     category: "frontend",
     image: "/todoList.png",
     tech: ["React.js", "JavaScript", "CSS"],
-    live: "https://github.com/shrawanimedankar/To-Do-List",
+    live: "",
     github: "https://github.com/shrawanimedankar/To-Do-List",
     date: "October 2025",
     keyFeatures: [

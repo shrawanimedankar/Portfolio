@@ -6,7 +6,6 @@ import Icons from "../../utils/icons";
 export default function ProjectDetails() {
   const { id } = useParams();
   const project = projectsData.find((p) => p.id === parseInt(id));
-
   if (!project) return <p>Project not found!</p>;
 
   return (
@@ -31,12 +30,10 @@ export default function ProjectDetails() {
                 ))}
               </ul>
             </div>
-            
           ) : (
             <p className={styles.shortDesc}>{project.description}</p>
           )}
         </div>
-        
 
         <div className={styles.sidebarCard}>
           <h3>Project Details</h3>
@@ -63,19 +60,14 @@ export default function ProjectDetails() {
               <Icons.RiGithubFill
                 style={{ verticalAlign: "middle" }}
                 size={30}
-              /> View Code
+              />{" "}
+              View Code
             </a>
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.btnLive}
-            >
-              <Icons.RiBaseStationLine
-                style={{ verticalAlign: "middle" }}
-                size={30}
-              /> Live Demo
-            </a>
+            {project.live && project.live.trim() !== "" && (
+              <a href={project.live} target="_blank" rel="noopener noreferrer" className={styles.btnLive}>
+                <Icons.RiBaseStationLine size={30} /> Live Demo
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -92,12 +84,12 @@ export default function ProjectDetails() {
       {project.futureImprovements && (
         <section className={styles.section}>
           <div className={styles.keyFeatures}>
-          <h3>Future Improvements:</h3>
-          <ul>
-            {project.futureImprovements.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
+            <h3>Future Improvements:</h3>
+            <ul>
+              {project.futureImprovements.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
           </div>
         </section>
       )}

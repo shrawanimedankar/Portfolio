@@ -14,13 +14,10 @@ export default function ProjectCard({ project }) {
         <h3 className={styles.title}>{project.title}</h3>
 
         <div className={styles.linksInline}>
-          <a href={project.live} target="_blank" rel="noopener noreferrer">
-            <Icons.RiBaseStationLine
-              style={{ verticalAlign: "middle" }}
-              size={30}
-            />
-            Live
-          </a>
+            {project.live && project.live.trim() !== "" && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer">
+              <Icons.RiBaseStationLine style={{ verticalAlign: "middle" }} size={30}/>Live</a>
+          )}
           <a href={project.github} target="_blank" rel="noopener noreferrer">
             <Icons.RiGithubFill style={{ verticalAlign: "middle" }} size={30} />
           </a>

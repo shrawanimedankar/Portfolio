@@ -38,7 +38,7 @@
   overflow: hidden;
   transition: 0.3s;
   padding: 0 0 10px 0;
-   border: 1px solid #3700175f;
+  border: 1px solid #3700175f;
 }
 
 .card:hover {
@@ -53,7 +53,7 @@
 }
 
 .content {
-  padding: 10px 20px; 
+  padding: 10px 20px;
   text-align: left;
   color: #ffffff;
 }
@@ -135,13 +135,6 @@
 .tech span:hover {
   border: 1px solid rgb(201, 201, 201);
 }
-
-
-
-
-
-
-
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
