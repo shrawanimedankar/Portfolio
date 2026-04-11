@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 4px 60px 0 30px;
-  background: #ff399c;
+  background: #fd2792;
   position: sticky;
   top: 0;
   left: 0;
@@ -12,7 +12,6 @@
   transition:
     background 0.3s ease,
     backdrop-filter 0.3s ease;
-    box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.882);
 }
 
 .navbar.scrolled {

@@ -11,7 +11,7 @@
 
 .contact p {
   color: #858585;
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
   font-weight: 900;
   font-size: 1.2rem;
   text-align: center;
@@ -27,13 +27,13 @@
 
 /* Form Section */
 .formCard {
-  background-color: #2a0018;
-  padding: 30px 50px;
+background-color: #2a0018;
+  padding: 10px 25px;
   border-radius: 30px;
   border: 1px solid rgb(95, 95, 95);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2px;
   color: rgb(255, 255, 255);
 }
 
@@ -62,7 +62,7 @@
 .fieldFull {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 3px;
 }
 
 .fieldFull {
@@ -96,7 +96,7 @@
   border-radius: 8px;
   border: 1px solid #ffffff;
   outline: none;
-  background-color: rgb(255, 180, 235);
+  background-color: rgb(254, 198, 238);
   font-size: 1rem;
   color: #000000;
   font-weight: 600;
@@ -141,14 +141,26 @@
   background-color: white;
   border: 1px solid white;
 }
-.success {
-  color: #000000 !important;
-  background-color: #00ff48!important;
-}
-.error {
-  color: #ffffff!important;
+/* Status error (big message box) */
+.statusError {
+  color: #ffffff !important;
   background-color: #da0000 !important;
 }
+
+/* Status success */
+.statusSuccess {
+  color: #000000 !important;
+  background-color: #00ff48 !important;
+}
+
+/* Validation error (small text under fields) */
+.fieldError {
+  color: #fa0000 !important;
+  font-size: 0.9rem !important;
+  margin: 2px 0 0 0 !important; 
+  text-align: left !important;
+}
+
 
 /* Contact Details Card */
 .infoSection {
@@ -202,13 +214,12 @@
   gap: 10px;
 }
 
-
-
 .infoSection p {
-  color: #ff4949;
+  color: #d4d4d4;
   font-size: 0.8rem !important;
-  margin: 3px 0 20px 0;
+  margin:rgb(172, 172, 172)20px 0;
 }
+
 
 /* Tablets */
 @media (max-width: 1230px) {
@@ -355,3 +366,7 @@
     font-size: 0.9rem;
   }
 }
+
+
+
+
