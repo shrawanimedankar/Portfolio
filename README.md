@@ -1,6 +1,6 @@
 # 💻 Personal Portfolio
 
-A modern, responsive personal portfolio website built using **React.js** to showcase my skills, projects, certification. The portfolio includes multiple pages with smooth navigation and a functional contact form that sends messages directly to email.
+A modern, responsive personal portfolio website built using **React.js** to showcase my skills, projects. The portfolio includes multiple pages with smooth navigation and a functional contact form that sends messages directly to email.
 
 ## 🌐 Live Demo:
 
