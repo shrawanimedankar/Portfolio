@@ -8,63 +8,61 @@ export default function Contact() {
   const [status, setStatus] = useState("");
   const [errors, setErrors] = useState({});
 
-
   const validate = () => {
-  const form = formRef.current;
+    const form = formRef.current;
 
-  const newErrors = {};
-  const name = form.user_name.value.trim();
-  const email = form.user_email.value.trim();
-  const subject = form.subject.value.trim();
-  const message = form.message.value.trim();
+    const newErrors = {};
+    const name = form.user_name.value.trim();
+    const email = form.user_email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
 
-  if (!name) newErrors.name = "Please enter your name.";
-  else if (name.length < 3) newErrors.name = "Name must be at least 3 characters.";
+    if (!name) newErrors.name = "Please enter your name.";
+    else if (name.length < 3)
+      newErrors.name = "Name must be at least 3 characters.";
 
-  if (!email) newErrors.email = "Please enter your name.";
-  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-    newErrors.email = "Invalid email";
+    if (!email) newErrors.email = "Please enter your name.";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      newErrors.email = "Invalid email";
 
-  if (!subject) newErrors.subject = "Please add a subject.";
+    if (!subject) newErrors.subject = "Please add a subject.";
 
-  if (!message) newErrors.message = "Please enter your message.";
-  else if (message.length < 10)
-    newErrors.message = "Message must be at least 10 characters.";
+    if (!message) newErrors.message = "Please enter your message.";
+    else if (message.length < 10)
+      newErrors.message = "Message must be at least 10 characters.";
 
-  setErrors(newErrors);
-  return Object.keys(newErrors).length === 0;
-};
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-const sendEmail = (e) => {
-  e.preventDefault();
+    if (!validate()) return; // stop if invalid
 
-  if (!validate()) return; // 🚨 stop if invalid
-
-  emailjs
-    .sendForm(
-      import.meta.env.VITE_SERVICE_ID,
-      import.meta.env.VITE_TEMPLATE_ID,
-      formRef.current,
-      import.meta.env.VITE_PUBLIC_KEY
-    )
-    .then(() => {
-      emailjs.sendForm(
+    emailjs
+      .sendForm(
         import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_AUTOREPLY_TEMPLATE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_PUBLIC_KEY
-      );
+        import.meta.env.VITE_PUBLIC_KEY,
+      )
+      .then(() => {
+        emailjs.sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_AUTOREPLY_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_PUBLIC_KEY,
+        );
 
-      setStatus("Your message has been sent!");
-      setErrors({});
-      formRef.current.reset();
-    })
-    .catch(() => {
-      setStatus("Sorry, we couldn't send your message. Try again.");
-    });
-};
-
+        setStatus("Your message has been sent!");
+        setErrors({});
+        formRef.current.reset();
+      })
+      .catch(() => {
+        setStatus("Sorry, we couldn't send your message. Try again.");
+      });
+  };
 
   return (
     <section className={styles.contact}>
@@ -88,26 +86,53 @@ const sendEmail = (e) => {
             <div className={styles.formGrid}>
               <div className={styles.fieldHalf}>
                 <label htmlFor="name">Name</label>
-                <input name="user_name" type="text" placeholder="Your name" id="name" />
-                {errors.name && <p className={styles.fieldError}>{errors.name}</p>}
+                <input
+                  name="user_name"
+                  type="text"
+                  placeholder="Your name"
+                  id="name"
+                />
+                {errors.name && (
+                  <p className={styles.fieldError}>{errors.name}</p>
+                )}
               </div>
 
               <div className={styles.fieldHalf}>
                 <label htmlFor="email">Email</label>
-                <input name="user_email" type="email" placeholder="Your email" id="email" />
-                {errors.email && <p className={styles.fieldError}>{errors.email}</p>}
+                <input
+                  name="user_email"
+                  type="email"
+                  placeholder="Your email"
+                  id="email"
+                />
+                {errors.email && (
+                  <p className={styles.fieldError}>{errors.email}</p>
+                )}
               </div>
 
               <div className={styles.fieldFull}>
                 <label htmlFor="subject">Subject</label>
-                <input name="subject" type="text" placeholder="What's this about?" id="subject" />
-                {errors.subject && <p className={styles.fieldError}>{errors.subject}</p>}
+                <input
+                  name="subject"
+                  type="text"
+                  placeholder="What's this about?"
+                  id="subject"
+                />
+                {errors.subject && (
+                  <p className={styles.fieldError}>{errors.subject}</p>
+                )}
               </div>
 
               <div className={styles.fieldFull}>
                 <label htmlFor="message">Message</label>
-                <textarea name="message" placeholder="Type your message…"  id="message" />
-                {errors.message && <p className={styles.fieldError}>{errors.message}</p>}
+                <textarea
+                  name="message"
+                  placeholder="Type your message…"
+                  id="message"
+                />
+                {errors.message && (
+                  <p className={styles.fieldError}>{errors.message}</p>
+                )}
               </div>
             </div>
 
@@ -118,7 +143,9 @@ const sendEmail = (e) => {
             {status && (
               <p
                 className={`${styles.status} ${
-                  status.includes("sent") ? styles.statusSuccess  : styles.statusError
+                  status.includes("sent")
+                    ? styles.statusSuccess
+                    : styles.statusError
                 }`}
               >
                 {status}
@@ -143,13 +170,6 @@ const sendEmail = (e) => {
               <Icons.RiMailLine className={styles.infoIcon} />
               shrawanimedankar@email.com
             </a>
-          </div>
-
-          <div className={styles.infoItem}>
-            <span className={styles.row}>
-              <Icons.RiPhoneFill className={styles.infoIcon} />
-              +91-7218001422
-            </span>
           </div>
 
           <div className={styles.infoItem}>

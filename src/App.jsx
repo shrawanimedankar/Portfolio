@@ -14,7 +14,6 @@ import Contact from "./Pages/Contact/Contact";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 
-
 function App() {
   return (
     <Router>
@@ -35,5 +34,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
