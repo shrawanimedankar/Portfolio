@@ -13,7 +13,7 @@ const Home = () => {
         <div className={styles.homeContainer}>
           {/* Left side: text */}
           <div className={styles.homeContent}>
-            <p className={styles.greet}>👋 Hi, I'm </p>
+            <p className={styles.greet}><span className={styles.wave}>👋</span> Hi, I'm </p>
             <p className={styles.name}>Shrawani Medankar</p>
             <h2 className={styles.titleRotate}>
               <span>MERN Stack Developer</span>

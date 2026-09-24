@@ -1,50 +1,55 @@
 .footer {
-  background: #130108;
-  color: #fff;
-  padding: 40px 7px 20px 7px;
+  position: relative;
+  overflow: visible;
   margin-top: 50px;
+  padding: 50px 20px 35px;
+  background-color: #25000f54;
+  color: white;
 }
 
+
 .container {
+  position: relative;
+  z-index: 10;
+
   max-width: 1400px;
   margin: auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .brand h2 {
-  padding-bottom: 1rem;
+  font-size: 2rem;
   font-family: "Acme", sans-serif;
   letter-spacing: 3px;
-  transition: 0.2s;
-  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .brand p {
-  color: #cfcfcf;
-  font-size: 1.4rem !important ;
+  color: #d8d8d8;
+  font-size: 1.3rem;
 }
 
 .links {
-  list-style: none;
   display: flex;
   gap: 20px;
+  list-style: none;
   padding: 0;
 }
 
 .links a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: filter 0.3s ease;
+  font-size: 1.15rem;
+  transition: 0.3s;
 }
 
 .links a:hover {
-  color: #ffffff;
-  filter: drop-shadow(0 0 1.5px #ffffff);
+  text-shadow: 0 0 10px white;
 }
 
 .social {
@@ -54,52 +59,52 @@
 }
 
 .social a {
-  transition: 0.3s;
   color: white;
-  border: 1px solid rgb(64, 64, 64);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   padding: 8px;
-  transition:
-    transform 0.1s ease,
-    color 0.3s ease;
+  transition: 0.3s;
 }
 
 .social a:hover {
-  color: #ffffff;
-  box-shadow: 1px 1px 12px #ff0000;
-  border: 1px solid rgb(255, 255, 255);
-  transform: translateY(-4px) scale(1.1);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 0 15px #ff158a;
+  border-color: white;
 }
 
 .copy {
+  position: relative;
+  z-index: 10;
+
+  margin-top: 35px;
   text-align: center;
-  margin-top: 25px;
+  color: #d8d8d8;
   font-size: 1rem;
-  color: #bebebe;
 }
+
+/* ================= MOBILE ================= */
 
 @media (max-width: 1100px) {
   .container {
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     gap: 25px;
   }
 
   .links {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
   }
 
   .social {
     justify-content: center;
   }
+
   .brand h2 {
     font-size: 1.6rem;
   }
+
   .brand p {
-     font-size: 1rem !important ;
+    font-size: 1rem;
   }
 }

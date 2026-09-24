@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 4px 60px 0 30px;
-  background: #fd2792;
+  background: linear-gradient(900deg, #5d002e, #ff158a);
   position: sticky;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
 }
 
 .navbar.scrolled {
-  background: #ff399ce1;
+      background: linear-gradient(900deg, #5d002fd1, #ff158ad6);
   backdrop-filter: blur(6px);
 }
 
@@ -32,11 +32,11 @@
   height: 53px;
   object-fit: contain;
   border-radius: 50%;
-  border: 0.1px solid #fff;
+  border: 0.1px solid #f9f5f5;
 }
 
 .logo {
-  color: #ffffff;
+  color: white;
   font-size: 1.2rem;
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
